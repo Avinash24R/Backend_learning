@@ -1,0 +1,21 @@
+kubectl create deployment
+
+or kubectl apply -f deployment.
+
+this reqired two thing
+1. name of the deployment
+2. image of the container(Id of docker image) it would be URL of docker hub
+
+Unquely IP address is assigned to each pod and we can see that by using below command
+- kubectl get pods -o wide 
+
+Imp 
+Why Deleting a Pod Doesn't Feel Like a Deletion
+Remember when we had you delete a pod, only to see that a new pod was created in its place? It's kinda like chopping heads off of a hydra.
+
+That's because the desired state described in our Deployment says we want 2 pods running at all times.
+ When we delete one, the Deployment Controller sees that the current state doesn't match the desired state, so it creates a new pod to make them match again.
+
+
+ create a  file named deployment.yaml and run this command
+kubectl apply -f deployment.yaml
