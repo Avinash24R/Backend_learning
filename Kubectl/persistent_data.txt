@@ -1,0 +1,9 @@
+to make we have persistent data in our cluster, we need to create a PersistentVolume (PV) and a PersistentVolumeClaim (PVC).
+
+written in pvc yaml file
+
+add that to your volume in your deployment yaml file
+
+When Would You Use a Database on Kubernetes?
+I have used databases on Kubernetes in the past, but I've usually done it when the deployment wasn't exactly mission-critical. For example, I've deployed Grafana and Prometheus on Kubernetes,
+and they both have out-of-the-box support for in-cluster databases. I didn't care too much about backups and automatic upgrades for my telemetry data, and I knew the data set was small and static, so it was a good fit.

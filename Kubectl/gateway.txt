@@ -1,0 +1,14 @@
+A Gateway resource exposes services to the outside world and is used often in production environments.
+
+client -> gateway -> service -> pod(many pods)
+
+The Gateway resource is part of the Kubernetes API and is used to define how external traffic should be routed to services within the cluster. It allows you to specify rules for routing traffic based on hostnames, paths, and other criteria.
+
+now we need to config our local machine to resolve the domain to the gateways load balancer IP address. We can do this by adding an entry to our /etc/hosts file.
+
+nvim /etc/hosts
+
+127.0.0.1        synchat.internal
+127.0.0.1        synchatapi.internal
+
+and also change window C:\Windows\System32\drivers\etc\hosts
