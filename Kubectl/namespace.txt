@@ -1,0 +1,4 @@
+<service-name>.<namespace>.svc.cluster.local
+
+add namespace to your service yaml file
+and apply it to your cluster
