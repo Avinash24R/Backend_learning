@@ -12,3 +12,10 @@ nvim /etc/hosts
 127.0.0.1        synchatapi.internal
 
 and also change window C:\Windows\System32\drivers\etc\hosts
+
+
+Domain name http://synchatapi.internal -> Gateway -> service -> pod
+
+DNS
+Kubernetes automatically creates DNS entries for each service 
+that can be used to route HTTP traffic between services. The format is:

@@ -5,7 +5,7 @@ metadata:
   labels:
     app: synergychat-api
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: synergychat-api
@@ -23,5 +23,19 @@ spec:
                 configMapKeyRef:
                   name: synergychat-api-configmap
                   key: API_PORT
+            - name: API_DB_FILEPATH
+              value: /persist/db.json
+            - name: CRAWLER_BASE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: synergychat-api-configmap
+                  key:  CRAWLER_BASE_URL
+          volumeMounts:
+            - name : synergychat-api-volume
+              mountPath: /persist
+      volumes:
+        - name: synergychat-api-volume
+          persistentVolumeClaim:
+            claimName: synergychat-api-pvc
 
   

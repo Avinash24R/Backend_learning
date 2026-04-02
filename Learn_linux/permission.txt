@@ -1,0 +1,20 @@
+permission
+who has the premission
+what permission they have
+
+this is represented by the 10 characters in the leftmost column of the output of ls -l
+first ch: d , - 
+d: directory
+-: file
+
+next 3 characters: owner permissions
+r: read
+w: write    
+x: execute
+
+next 3 characters: group permissions
+r: read
+w: write
+x: execute
+
+and next 3 characters: everyone permissions

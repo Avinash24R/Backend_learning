@@ -1,0 +1,32 @@
+what is CLI?
+CLI stands for Command Line Interface. It is a way for users to interact with a computer system by typing commands into a terminal or command prompt. Unlike graphical user interfaces (GUIs) that rely on visual elements like icons and windows, CLIs allow users to execute commands directly by typing them, providing a more efficient and powerful way to control the system, especially for advanced users and developers.
+
+what is terminal?
+terminal emulator is a software application that provides a text-based interface for users to interact with the operating system. It allows users to enter commands and receive output in a command-line environment. Terminals are commonly used in Unix-like operating systems, such as Linux and macOS, but they can also be found in other operating systems.
+
+what shell is?
+shell are often referred as "REPL" 
+(Read-Eval-Print Loop) because they read user input, evaluate it, and then print the output. They provide a powerful and flexible way to interact with the operating system, allowing users to execute commands, automate tasks, and manage files and processes efficiently. 
+
+commands
+
+`ls` - List the contents of a directory
+`cd` - Change the current directory
+`mkdir` - Create a new directory
+`rm` - Remove files or directories
+ - `rm -rf` - Remove files or directories recursively and forcefully
+
+`cp` - Copy files or directories
+`mv` - Move or rename files or directories
+`cat` - Concatenate and display the contents of files
+    - head -n 10 file.txt - Display the first 10 lines of a file
+    - tail -n 10 file.txt - Display the last 10 lines of a file
+`grep` - Search for patterns in files
+`echo` - Display a line of text or a variable value
+`pwd` - Print the current working directory
+`chmod` - Change the permissions of a file or directory
+`chown` - Change the ownership of a file or directory
+`ps` - Display information about running processes
+
+`curl -L` - Follow redirects when making HTTP requests
+`wget` - Download files from the web
