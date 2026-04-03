@@ -1,0 +1,3 @@
+Edit your .zshrc / .bashrc file (whatever your shell config file is) and add an export command to the end of the file that adds the worldbanc/private/bin directory to your PATH variable.
+Restart your shell session (or run source ~/.zshrc or source ~/.bashrc)
+Run the worldbanc.sh CLI tool again from your home directory and make sure it works.
