@@ -1,0 +1,45 @@
+git add <path to file> | pattern>
+
+git add i-use-arch.btw
+ 
+this is called staging files, you can stage as many files as you want, and then you can commit them all together.
+
+git commit -m "message"
+commit is a snapshot of the repo at given  time.
+
+git log commad show a history of the commits in a repo, you can see the commit message, the author, and the date of the commit.
+
+commit hash : each commit has a unique identifier called "commit has"
+Note hash = sha-1 hash, it is a 40 character string that is generated based on the content of the commit. It is used to identify the commit and to track changes in the repo.
+
+tree : git ways to storing a directory
+blob: git ways to store a file
+
+> git cat-file -p 5ba786fcc93e8092831c01e71444b9baa2228a4f
+
+tree 5b21d4f16a4b07a6cde5a3242187f6a5a68b060f       
+author Avinash24R <avinash24082005@gmail.com> 1775274246 +0000
+committer Avinash24R <avinash24082005@gmail.com> 1775274246 +0000
+
+A: add contents.md
+
+if you want to see the content of the file, you can use the command "git cat-file -p <blob hash>"
+git cat-file -p <hash>
+git cat-file -p <tree hash>
+git cat-file -p <blob hash>
+you will see the content of file
+
+While it's true that Git stores entire snapshots, it does have some performance optimizations 
+so that your .git directory doesn't get too unbearably large.
+
+Git compresses and packs files to store them more efficiently.
+Git deduplicates files that are the same across different commits. 
+If a file doesn't change between commits, Git will only store it once.
+
+
+There are several locations where Git can be configured. From more general to more specific, they are:
+
+system: /etc/gitconfig, a file that configures Git for all users on the system
+global: ~/.gitconfig, a file that configures Git for all projects of a user
+local: .git/config, a file that configures Git for a specific project
+worktree: .git/config.worktree, a file that configures Git for part of a project

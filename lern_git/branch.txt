@@ -1,0 +1,15 @@
+This is all to know about branch in git
+Branch is a pointer to a commit, it is used to keep track of the commits in a repo. 
+When you create a new branch, it points to the same commit as the current branch. 
+When you make a new commit, the branch pointer moves to the new commit.
+
+how to rename a branch
+git branch -m <old branch name> <new branch name>
+
+create a new branch
+git branch <branch name>
+
+to create and switch to it.
+git switch -c <branch name>
+
+The "heads" (or "tips") of branches are stored in the .git/refs/heads directory. If you cat one of the files in that directory, you should be able to see the commit hash that the branch points to.
